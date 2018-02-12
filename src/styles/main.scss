@@ -1,0 +1,22 @@
+@import "variables";
+@import "bootstrap";
+@import "fontAweasome";
+@import "fonts";
+
+.fontLight {
+  font-family: $fontLight;
+}
+.fontRegular {
+  font-family: $fontRegular;
+}
+.fontMedium {
+  font-family: $fontMedium;
+}
+.fontSemiBold {
+  font-family: $fontSemiBold;
+}
+.fontBold {
+  font-family: $fontBold;
+}
+@import "mediaqueries";
+
