@@ -1,0 +1,20 @@
+.logo__img {
+  position: relative;
+  display: inline-block;
+  z-index: 300;
+  & img {
+    transition: .3s all ease;
+    width: 50px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width : 786px) {
+  .logo__img {
+    position: relative;
+    display: inline-block;
+    z-index: 300;
+    & img {
+      width: 33px;
+    }
+  }
+}

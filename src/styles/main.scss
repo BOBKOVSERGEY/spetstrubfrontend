@@ -1,7 +1,19 @@
 @import "variables";
 @import "bootstrap";
+@import "grid";
 @import "fontAweasome";
 @import "fonts";
+@import "header";
+@import "rd-navbar";
+
+body {
+  font-family: $fontRegular;
+  font-size: 18px;
+  color: $colorGray;
+}
+
+
+
 
 .fontLight {
   font-family: $fontLight;
