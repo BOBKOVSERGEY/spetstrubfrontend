@@ -1,0 +1,31 @@
+.footer {
+  background: url(../images/dark-pattern.jpg); //$colorDark;
+  padding: 25px 0;
+  //font-size: 16px;
+  & p {
+    margin-bottom: 10px;
+  }
+  & a {
+    color: $colorOrange;
+    font-family: $fontSemiBold;
+    transition: .3s all ease;
+    &:hover {
+      text-decoration: none;
+    }
+    &:active {
+      text-decoration: none;
+    }
+    &:focus {
+      text-decoration: none;
+    }
+  }
+  &__copyright {
+    padding: 10px 0;
+
+    text-align: center;
+    & a {
+      font-family: $fontRegular;
+    }
+  }
+
+}

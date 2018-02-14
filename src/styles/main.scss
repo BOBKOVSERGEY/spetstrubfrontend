@@ -3,14 +3,22 @@
 @import "grid";
 @import "fontAweasome";
 @import "fonts";
-@import "header";
-@import "rd-navbar";
+
 
 body {
   font-family: $fontRegular;
   font-size: 18px;
   color: $colorGray;
 }
+
+@import "header";
+@import "rd-navbar";
+@import "to-top";
+@import "camera";
+@import "slider";
+@import "button";
+
+@import "footer";
 
 
 

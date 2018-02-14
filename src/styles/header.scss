@@ -8,6 +8,27 @@
     margin-top: 10px;
   }
 }
+.header {
+  &__panel-dark {
+    & i {
+      color: $colorLightGray;
+    }
+    & a {
+      font-family: $fontSemiBold;
+      color: $colorOrange;
+      transition: .3s all ease;
+      &:hover {
+        text-decoration: none;
+      }
+      &:active {
+        text-decoration: none;
+      }
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}
 @media only screen and (max-width : 786px) {
   .logo__img {
     position: relative;
