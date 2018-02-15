@@ -645,53 +645,6 @@
     };
 
 
-    Collapse.prototype.switchDesktopVersion = function (flag) {
-        var meta = $('meta[name="viewport"]'),
-            content = meta.attr("content"),
-            attr = content.split(","), d;
-
-        if (!this.isSwitched) {
-            for (var i in attr) {
-                if (attr[i].indexOf("width") > -1) {
-                    attr[i] = "width=1366";
-                }
-                else if (attr[i].indexOf("user-scalable") > -1) {
-                    attr[i] = "user-scalable=yes";
-                }
-                else if (attr[i].indexOf("initial-scale") > -1) {
-                    attr[i] = "initial-scale=" + (document.documentElement.clientWidth / this._core.options.collapse.desktopViewWidth);
-                }
-            }
-            this.isSwitched = true;
-            $(".rd-navbar--switch-to-desktop").removeClass("fa-desktop").addClass("fa-mobile")
-                .each(function () {
-                    $(this).text("Show Mobile Version");
-                });
-            $.cookie("rd-show-desktop", true, {expires: 365, path: '/'});
-        } else {
-            for (var i in attr) {
-                if (attr[i].indexOf("width") > -1) {
-                    attr[i] = "width=device-width";
-                }
-                else if (attr[i].indexOf("user-scalable") > -1) {
-                    attr[i] = "user-scalable=no";
-                }
-                else if (attr[i].indexOf("initial-scale") > -1) {
-                    attr[i] = "initial-scale=1";
-                }
-            }
-            this.isSwitched = false;
-            $(".rd-navbar--switch-to-desktop").removeClass("fa-mobile").addClass("fa-desktop")
-                .each(function () {
-                    $(this).text("Show Desktop Version");
-                });
-            $.removeCookie("rd-show-desktop", {path: '/'});
-        }
-
-        meta.attr("content", attr.join(","));
-        $(window).trigger("resize");
-    }
-
 })(window.jQuery, window, document);
 
 /**

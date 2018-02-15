@@ -2,3 +2,8 @@
   background: #F0EFF0;
   padding: 40px 0;
 }
+@media only screen and (max-width : 992px) {
+  .slider {
+    padding: 0;
+  }
+}

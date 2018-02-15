@@ -294,6 +294,7 @@ background: rgba($colorDark, 0.3);
     z-index: 1;
     //margin-top: -20px;
     transform: translate(-50%, -50%);
+    text-align: right;
   }
   & h2 {
     font-family: $fontSemiBold;
@@ -302,6 +303,11 @@ background: rgba($colorDark, 0.3);
   }
   &__description {
     margin-top: 10px;
+    color: #777;
+  }
+  &__wrapper-btn {
+    text-align: center;
+    margin-top: 32px;
   }
 }
 
@@ -310,4 +316,24 @@ background: rgba($colorDark, 0.3);
 }
 .bg-secondary.skew-left:before, .bg-secondary.skew-right:before {
   background: url(../images/dark-pattern.jpg) repeat;
+}
+
+@media only screen and (max-width : 992px) {
+  .bg-secondary {
+
+    &__caption {
+
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .bg-secondary {
+    & h2 {
+      font-family: $fontSemiBold;
+      font-size: 35px;
+      color: #fff;
+    }
+  }
 }
