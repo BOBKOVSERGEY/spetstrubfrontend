@@ -5,9 +5,9 @@
   font-size: 24px;
   line-height: 46px;
   color: #FFF;
-  background: rgba(#191919, .7);
+  background: $colorOrange;
   border-radius: 50%;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 2px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  //box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 2px 3px 8px 0px rgba(0, 0, 0, 0.3);
   position: fixed;
   right: 15px;
   bottom: 15px;
@@ -20,7 +20,7 @@
 }
 .ui-to-top:hover {
   color: #FFF;
-  background: #f47e00;
+  background: lighten($colorOrange, 10%);
   text-decoration: none;
 }
 .ui-to-top:active {

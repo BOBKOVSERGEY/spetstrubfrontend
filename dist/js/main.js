@@ -59,7 +59,7 @@ $(function () {
 
 
     $('#camera').camera({
-      autoAdvance: false,
+      autoAdvance: true,
       height: '' + 590 / 2050 * 100 + '%',
       minHeight: '590px',
       pagination: false,

@@ -1,7 +1,26 @@
 .footer {
-  background: url(../images/dark-pattern.jpg); //$colorDark;
+  background: $colorDark; //url(../images/dark-pattern.jpg); //$colorDark;
   padding: 25px 0;
   //font-size: 16px;
+  &__email {
+    color: #fff;
+    margin-bottom: 10px;
+    & i {
+      color: $colorLightGray;
+      position: relative;
+      top: 1px;
+    }
+  }
+  &__phone {
+    text-align: right;
+    color: #fff;
+    margin-bottom: 10px;
+    & i {
+      color: $colorLightGray;
+      position: relative;
+      top: 1px;
+    }
+  }
   & p {
     margin-bottom: 10px;
   }
@@ -21,11 +40,26 @@
   }
   &__copyright {
     padding: 10px 0;
-
-    text-align: center;
+    //text-align: center;
     & a {
       font-family: $fontRegular;
     }
   }
+  &__policy {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 15px;
+    & a {
+      font-family: $fontLight;
+    }
+  }
 
+}
+
+@media only screen and (max-width : 992px) {
+  .footer {
+    &__phone {
+      text-align: left;
+    }
+  }
 }
