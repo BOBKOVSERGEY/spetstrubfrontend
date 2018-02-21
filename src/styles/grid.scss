@@ -46,57 +46,6 @@ table {
   border-spacing: 0;
 }
 
-button,
-input[type='button'] {
-  transition: .3s all ease;
-  background: none;
-  border: none;
-  display: inline-block;
-  color: inherit;
-  margin: 0;
-  padding: 0;
-  outline: none;
-  outline-offset: 0;
-  font-size: inherit;
-  font-family: inherit;
-  line-height: inherit;
-  overflow: visible;
-  cursor: pointer;
-  -webkit-appearance: none;
-}
-button::-moz-focus-inner,
-input[type='button']::-moz-focus-inner {
-  border: none;
-  padding: 0;
-}
-
-input[type='text'],
-input[type='time'],
-input[type='url'],
-input[type='month'],
-input[type='week'],
-input[type='email'],
-input[type='color'],
-input[type='datetime'],
-input[type='datetime-local'],
-input[type='range'],
-input[type='search'],
-input[type='tel'],
-input[type='date'],
-input[type='password'],
-input[type='number'],
-textarea {
-  color: inherit;
-  outline: none;
-  background-color: transparent;
-  border: none;
-  -webkit-appearance: none;
-  border-radius: 0;
-  font-family: inherit;
-  line-height: inherit;
-  vertical-align: baseline;
-  box-shadow: none;
-}
 
 
 a {

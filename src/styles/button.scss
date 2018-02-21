@@ -2,9 +2,13 @@
   position: relative;
   color: #fff;
   border: 0;
-  background: $colorOrange;
-  border-radius: 0 3px 3px 0;
+  //background: $colorOrange;
   z-index: 2;
+  &:focus {
+    outline: none;
+    color: #fff;
+  }
+
 
   &_big {
     padding: 20px 30px 20px 30px;
@@ -13,6 +17,7 @@
   }
   &_orange {
     color: #fff;
+    border-radius: 0 3px 3px 0;
     background: $colorOrange;
     height: 100%;
     &:hover {

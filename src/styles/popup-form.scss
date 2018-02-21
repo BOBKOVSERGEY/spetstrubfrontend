@@ -1,0 +1,46 @@
+.modal-content {
+  padding: 15px;
+  background: #F0EFF0;
+  &__btn-close {
+
+    & .close {
+      font-family: MontserratSemiBold;
+      font-size: 30px;
+      position: relative;
+      top: -10px;
+      right: -5px;
+      color: $colorOrange;
+      opacity: 1;
+    }
+  }
+  &__heading {
+    font-family: $fontSemiBold;
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0 20px 0;
+  }
+  &__form-wrapper-input {
+    margin-bottom: 15px;
+  }
+  &__form-input, &__form-textarea {
+    display: block;
+    width: 100%;
+    margin: 0;
+    -webkit-appearance: none;
+    font-size: 15px;
+    padding: 2.5px 18px;
+    color: #777;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 0;
+  }
+  &__form-input{
+    height: 41px;
+  }
+  &__form-textarea{
+    height: 150px;
+  }
+  &__form-wrapper {
+    margin: 0 15px;
+  }
+}

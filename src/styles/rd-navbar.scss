@@ -24,6 +24,7 @@
 }
 .rd-navbar .rd-navbar-brand, .rd-navbar .rd-navbar-nav {
   display: inline-block;
+  margin-top: 6px;
 }
 .rd-navbar .rd-navbar-brand .brand-name, .rd-navbar .rd-navbar-brand .brand-slogan {
   vertical-align: baseline;
@@ -33,7 +34,8 @@
   font-family: $fontLight;
   color: $colorGray;
   font-size: 30px;
-  line-height: 1.5;
+  position: relative;
+  top: 12px;
 }
 .rd-navbar .rd-navbar-brand .brand-name:hover {
   text-decoration: none;
@@ -43,8 +45,8 @@
 }
 .rd-navbar .rd-navbar-brand .brand-slogan {
   font-family: $fontLight;
-  font-size: 14px;
-  line-height: 15px;
+  font-size: 12px;
+  margin-top: 7px;
 }
 
 .rd-navbar-static, .rd-navbar-fullwidth {
@@ -228,11 +230,25 @@
 }
 @media (min-width: 768px) {
   .rd-navbar-static:not(.rd-navbar--is-stuck) .rd-navbar-brand .brand-name, .rd-navbar-fullwidth:not(.rd-navbar--is-stuck) .rd-navbar-brand .brand-name {
-    font-size: 50px;
+    font-size: 42px;
+    //top: 0;
   }
+  .rd-navbar-static:not(.rd-navbar--is-stuck) .brand-slogan, .rd-navbar-fullwidth:not(.rd-navbar--is-stuck) .brand-slogan {
+   display: block;
+  }
+  .rd-navbar-static:not(.rd-navbar--is-stuck) .logo__img, .rd-navbar-fullwidth:not(.rd-navbar--is-stuck) .logo__img{
+   margin-top: 0;
+  }
+  .rd-navbar-static:not(.rd-navbar--is-stuck) .rd-navbar-brand, .rd-navbar-fullwidth:not(.rd-navbar--is-stuck) .rd-navbar-brand{
+    margin-top: 16px;
+  }
+
   .rd-navbar-static:not(.rd-navbar--is-stuck) .logo__img img, .rd-navbar-fullwidth:not(.rd-navbar--is-stuck) .logo__img img {
-    width: 100px;
+    width: 78px;
   }
+}
+.brand-slogan {
+  display: none;
 }
 
 /*===============     Sidebar Layout    =================*/
@@ -674,7 +690,6 @@
 .rd-navbar-fixed .rd-navbar-brand .brand-name {
   display: inline-block;
   font-size: 24px;
-  line-height: 48px;
   transition: .3s all ease;
 }
 .rd-navbar-fixed .rd-navbar-brand .brand-slogan {
@@ -1162,4 +1177,10 @@
 }
 .rd-navbar--switch-to-desktop {
   display: none;
+}
+
+@media only screen and (max-width : 786px) {
+  .rd-navbar .rd-navbar-brand, .rd-navbar .rd-navbar-nav {
+    margin-top: 0;
+  }
 }

@@ -180,7 +180,7 @@
                     <p>Высококачественная металлическая и стальная труба от производителя</p>
                   </div>
                   <div class="bg-secondary__wrapper-btn">
-                    <a class="btn btn_big btn_orange" href='#'>Онлайн заказ</a>
+                    <a class="btn btn_big btn_orange" href='#' data-toggle="modal" data-target="#myModal">Онлайн заказ</a>
                   </div>
                 </div>
               </div>
@@ -238,7 +238,7 @@
     <h2 class="catalog__heading">Каталог</h2>
     <div class="row">
       <div class="col-md-4 col-sm-6">
-        <a href="#" class="catalog__item">
+        <a href="#" class="catalog__item wow fadeInUp">
           <img src="dist/images/product-tolstosten-2.jpg" alt="">
           <div class="catalog__item-body">
             <h5 class="catalog__item-heading">Трубы толстостенные</h5>
@@ -250,7 +250,7 @@
         </a>
       </div>
       <div class="col-md-4 col-sm-6">
-        <a href="#" class="catalog__item">
+        <a href="#" class="catalog__item wow fadeInUp" data-wow-delay=".2s">
           <img src="dist/images/product-1.jpg" alt="">
           <div class="catalog__item-body">
             <h5 class="catalog__item-heading">Трубы котельные</h5>
@@ -262,7 +262,7 @@
         </a>
       </div>
       <div class="col-md-4 col-sm-6">
-        <a href="#" class="catalog__item">
+        <a href="#" class="catalog__item wow fadeInUp" data-wow-delay=".4s">
           <img src="dist/images/product-gost-2.jpg" alt="">
           <div class="catalog__item-body">
             <h5 class="catalog__item-heading">Трубы ГОСТ 8732-78</h5>
@@ -380,6 +380,42 @@
     </div>
   </div>
 </footer>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-content__btn-close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <h2 class="modal-content__heading">Онлайн заказ</h2>
+      <div class="modal-content__form-wrapper">
+        <form action="" class="modal-content__form">
+          <div class="modal-content__form-wrapper-input">
+            <input class="modal-content__form-input" type="text" name="name" placeholder="Ваше имя">
+          </div>
+          <div class="modal-content__form-wrapper-input">
+            <input class="modal-content__form-input" type="text" name="phone" placeholder="Ваш телефон">
+          </div>
+          <div class="modal-content__form-wrapper-input">
+            <input class="modal-content__form-input" type="email" name="email" placeholder="Ваш email">
+          </div>
+          <div class="modal-content__form-wrapper-input">
+            <input class="modal-content__form-input" type="email" name="email" placeholder="Название компании">
+          </div>
+          <div class="modal-content__form-wrapper-textarea">
+            <textarea class="modal-content__form-textarea" name="comment" placeholder="Комментарий"></textarea>
+          </div>
+          <div class="modal-content__form-wrapper-file">
+            <input type="file" name="file">
+          </div>
+          <div class="modal-content__form-wrapper-submit">
+            <button type="submit" name="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="dist/js/lib.js"></script>
 <script src="dist/js/main.js"></script>
 </body>
