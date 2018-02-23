@@ -18,7 +18,7 @@
           <li>
             <i class="fa fa-envelope" aria-hidden="true"></i>
             <span class="rd-navbar-fixed-hidden rd-navbar-sidebar-hidden">Email:</span>
-            <a href='mailto:speztrub@gmail.com'>speztrub@gmail.com</a>
+            <a href='mailto:info@spetstrub.ru'>info@spetstrub.ru</a>
           </li>
           <li>
             <span class="rd-navbar-fixed-hidden rd-navbar-sidebar-hidden postfix-1">Нужна помощь? Позвоните</span>
@@ -34,7 +34,7 @@
             <img src="dist/images/logo.png" alt="">
           </div>
           <div class="rd-navbar-brand">
-            <a href="#" class="brand-name primary-color">
+            <a href="/" class="brand-name primary-color">
               СпецТруб
             </a>
             <div class="brand-slogan">
@@ -44,7 +44,7 @@
         </div>
         <ul class="rd-navbar-nav">
           <li class="active">
-            <a href="index.html">Главная</a>
+            <a href="/">Главная</a>
           </li>
           <li>
             <a href="#">О нас</a>
@@ -157,7 +157,7 @@
             <a href="index-3.html">Расчеты</a>
           </li>
           <li>
-            <a href="index-4.html">Контакты</a>
+            <a href="contacts.html">Контакты</a>
           </li>
         </ul>
       </div>
@@ -355,7 +355,7 @@
         <div class="footer__email">
           <i class="fa fa-envelope" aria-hidden="true"></i>
           <span>Email: </span>
-          <a href='mailto:speztrub@gmail.com'>speztrub@gmail.com</a>
+          <a href='mailto:info@spetstrub.ru'>info@spetstrub.ru</a>
         </div>
       </div>
       <div class="col-md-6">
@@ -389,27 +389,31 @@
       </div>
       <h2 class="modal-content__heading">Онлайн заказ</h2>
       <div class="modal-content__form-wrapper">
-        <form action="" class="modal-content__form">
+        <form action="sendmail.php" class="modal-content__form" id="sendformpopup" method="post" enctype="multipart/form-data">
           <div class="modal-content__form-wrapper-input">
-            <input class="modal-content__form-input" type="text" name="name" placeholder="Ваше имя">
+            <input class="modal-content__form-input" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
           </div>
           <div class="modal-content__form-wrapper-input">
-            <input class="modal-content__form-input" type="text" name="phone" placeholder="Ваш телефон">
+            <input class="modal-content__form-input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
           </div>
           <div class="modal-content__form-wrapper-input">
-            <input class="modal-content__form-input" type="email" name="email" placeholder="Ваш email">
+            <input class="modal-content__form-input" type="email" autocomplete="off" name="email" placeholder="Ваш email">
           </div>
           <div class="modal-content__form-wrapper-input">
-            <input class="modal-content__form-input" type="email" name="email" placeholder="Название компании">
+            <input class="modal-content__form-input" type="text" autocomplete="off" name="company" placeholder="Название компании">
           </div>
           <div class="modal-content__form-wrapper-textarea">
-            <textarea class="modal-content__form-textarea" name="comment" placeholder="Комментарий"></textarea>
+            <textarea class="modal-content__form-textarea" autocomplete="off" name="comment" placeholder="Комментарий"></textarea>
           </div>
           <div class="modal-content__form-wrapper-file">
-            <input type="file" name="file">
+            <input type="file" id="file" autocomplete="off" class="hide-type-file inputfile" data-multiple-caption="{count} files selected" name="attachment">
+            <label class="upload-file" for="file"><span>Прикрепить файл</span></label>
+          </div>
+          <div class="modal-content__wrapper-checkbox">
+            <input id="chk" type="checkbox" class="js-policy" checked><label for="chk">Подтверждаю свое согласие на <a href="#">обработку</a> персональных данных</label>
           </div>
           <div class="modal-content__form-wrapper-submit">
-            <button type="submit" name="submit">Отправить</button>
+            <button class="modal-content__btn btn btn_sred btn_gray" type="submit" name="submit">Отправить</button>
           </div>
         </form>
       </div>
@@ -417,6 +421,7 @@
   </div>
 </div>
 <script src="dist/js/lib.js"></script>
+
 <script src="dist/js/main.js"></script>
 </body>
 </html>

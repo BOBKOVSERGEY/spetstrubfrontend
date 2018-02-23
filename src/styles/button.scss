@@ -1,4 +1,5 @@
 .btn {
+  transition: .3s all ease;
   position: relative;
   color: #fff;
   border: 0;
@@ -11,9 +12,38 @@
 
 
   &_big {
-    padding: 20px 30px 20px 30px;
+    padding: 20px 30px;
     font-size: 24px;
 
+  }
+  &_sred {
+    padding: 18px 30px;
+    font-size: 20px;
+  }
+  &_gray {
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    background: #363636;
+    height: 100%;
+    margin-left: -32px;
+    &:hover {
+      background: $colorOrange;
+      color: #fff;
+      &:after {
+        content: '';
+        border-left-color: $colorOrange;
+      }
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      border: 32px solid transparent;
+      border-left: 32px solid #363636;
+      transition: .3s all ease;
+      top: 0;
+      right: -63px;
+      z-index: -1;
+    }
   }
   &_orange {
     color: #fff;
