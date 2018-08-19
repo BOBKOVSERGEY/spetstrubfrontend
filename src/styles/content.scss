@@ -2,8 +2,91 @@
   background: #F0EFF0;
   padding: 40px 0;
   line-height: 1.4;
+  min-height: calc(100vh - 349px);
+  &.contacts {
+    min-height: 100%;
+  }
+  & ul {
+    margin: 20px 0 20px 0;
+    & li {
+      position: relative;
+      padding: 0 0 0 39px;
+      margin: 10px 0 0;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 17px;
+        top: 6px;
+        width: 10px;
+        height: 10px;
+        background: $colorOrange;
+        //border-radius: 50%;
+      }
+    }
+  }
+  &__tab {
+    & .nav-tabs > li {
+      float: none;
+      //margin-bottom: -1px;
+      display: inline-block;
+    }
+    & ul {
+      text-align: center;
+      margin: 20px 0 20px 0;
+      & li {
+        position: relative;
+        padding: 0;
+        margin: 10px 0 0;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 17px;
+          top: 6px;
+          width: 0px;
+          height: 0px;
+          background: $colorOrange;
+          //border-radius: 50%;
+        }
+      }
+    }
+    & .nav-tabs > li.active > a, &.nav-tabs > li.active > a:hover, &.nav-tabs > li.active > a:focus {
+      color: #fff;
+      cursor: default;
+      background-color: #FC7032;
+      border: 1px solid #FC7032;
+      border-bottom-color: transparent;
+    }
+    & .nav > li > a {
+      padding: 18px 15px;
+    }
+    & .nav-tabs > li > a {
+      border-radius: 0px 0px 0 0;
+    }
+    & .nav-tabs {
+      border-bottom: 0px solid #ddd;
+    }
+    & .nav-tabs .dropdown-menu {
+      text-align: left;
+      border-radius: 0;
+    }
+    & .nav .open>a, & .nav .open>a:focus, &.nav .open>a:hover {
+      background-color: $colorOrange;
+      color: #fff;
+      border-color: #f0eff0;
+    }
+    & .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+      color: #fff;
+      text-decoration: none;
+      background-color: $colorOrange;
+      outline: 0;
+    }
+  }
+  &__img-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+  }
   & a {
-    color: $colorLightGray;
+    color: $colorOrange;
     transition: .3s all ease;
     &:hover {
       color: $colorOrange;
@@ -13,7 +96,24 @@
   &__heading {
     font-family: $fontLight;
     font-size: 42px;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 30px 0;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      border-bottom: 2px solid #333;
+      width: 200px;
+      bottom: 0;
+      left: 4px;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      border-bottom: 4px solid $colorOrange;
+      width: 100px;
+      bottom: -4px;
+      left: 4px;
+    }
   }
   &__wrapper-icon {
     display: flex;
@@ -36,5 +136,29 @@
   }
   &__margin {
     margin-bottom: 20px;
+  }
+}
+.table {
+  & th {
+    font-family: $fontBold;
+  }
+  & tr {
+    //background: $colorOrange;
+    transition: .3s all ease;
+    /*& span {
+      background: #363636;
+      color: #ffff;
+      padding: 5px 7px;
+    }*/
+    &:hover {
+      background: #E6E4E7;
+      color: $colorOrange;
+    }
+  }
+  &_center {
+    text-align: center;
+    & th {
+      text-align: center;
+    }
   }
 }

@@ -1,0 +1,18 @@
+.suppliers {
+  padding: 40px 0;
+  &__heading {
+    font-family: $fontRegular;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: $colorGray;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .suppliers {
+    &__heading {
+      font-size: 35px;
+    }
+  }
+}

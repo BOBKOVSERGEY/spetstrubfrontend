@@ -1,3 +1,6 @@
+* + .btn, * + .btn-group {
+  margin-top: 32px;
+}
 .btn {
   transition: .3s all ease;
   position: relative;
@@ -20,12 +23,20 @@
     padding: 18px 30px;
     font-size: 20px;
   }
+  &_sred-pdf {
+    padding: 10px 20px 10px 10px;
+    font-size: 20px;
+    margin-right: 55px;
+    margin-top: 40px;
+  }
+  &_margin {
+    margin-left: -32px;
+  }
   &_gray {
     color: #fff;
     border-radius: 0 3px 3px 0;
     background: #363636;
     height: 100%;
-    margin-left: -32px;
     &:hover {
       background: $colorOrange;
       color: #fff;
@@ -45,6 +56,44 @@
       z-index: -1;
     }
   }
+  &_pdf {
+    color: #fff!important;
+    border-radius: 0 3px 3px 0;
+    background: #363636;
+    height: 100%;
+    &:hover {
+      background: $colorOrange;
+      color: #fff;
+      &:after {
+        content: '';
+        border-left-color: $colorOrange;
+      }
+      &:before {
+        background: #363636;
+      }
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      border: 24px solid transparent;
+      border-left: 24px solid #363636;
+      transition: .3s all ease;
+      top: 0;
+      right: -47px;
+      z-index: -1;
+    }
+    &:before {
+      content: 'PDF';
+      font-size: 13px;
+      position: absolute;
+      background: $colorOrange;
+      transition: .3s all ease;
+      top: -28px;
+      left: 0px;
+      padding: 5px;
+      z-index: -1;
+    }
+  }
   &_orange {
     color: #fff;
     border-radius: 0 3px 3px 0;
@@ -58,17 +107,6 @@
         border-left-color: #fff;
       }
     }
-    /*&:before {
-      content: '';
-      position: absolute;
-      width: 74px;
-      height: 74px;
-      background: $colorOrange;
-      transition: .3s all ease;
-      top: 0;
-      right: -3px;
-      z-index: -2;
-    }*/
     &:after {
       content: '';
       position: absolute;
@@ -80,9 +118,30 @@
       z-index: -1;
     }
   }
+  &_orange-sred {
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    background: $colorOrange;
+    height: 100%;
+    &:hover {
+      background: #fff;
+      color: $colorDark;
+      &:after {
+        content: '';
+        border-left-color: #fff;
+      }
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      border: 32px solid transparent;
+      border-left: 32px solid $colorOrange;
+      transition: .3s all ease;
+      top: 0;
+      right: -63px;
+      z-index: -1;
+    }
+  }
 }
 
 
-* + .btn, * + .btn-group {
-  margin-top: 32px;
-}

@@ -5,12 +5,12 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Контакты</title>
+  <title>О компании</title>
   <link rel="stylesheet" href="dist/css/main.css">
   <link href="dist/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
 </head>
 <body>
-<a class="feedback js-feedback" href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-envelope"></i></a>
+<a id="feedback" class="feedback js-feedback" href="#" data-toggle="modal" data-target="#myModal">Онлайн заказ</a>
 <header class="header">
   <div class="rd-navbar-wrap">
     <nav class="rd-navbar" data-rd-navbar-lg="rd-navbar-static">
@@ -48,7 +48,7 @@
           <li>
             <a href="/">Главная</a>
           </li>
-          <li>
+          <li class="active">
             <a href="about.html">О нас</a>
             <!--<ul class="rd-navbar-dropdown">
               <li>
@@ -158,7 +158,7 @@
           <li>
             <a href="raschety.html">Расчеты</a>
           </li>
-          <li class="active">
+          <li>
             <a href="contacts.html">Контакты</a>
           </li>
         </ul>
@@ -166,99 +166,29 @@
     </nav>
   </div>
 </header>
-<section class="content contacts">
+<section class="content">
   <div class="container">
-    <h1 class="content__heading">Контакты</h1>
+    <h1 class="content__heading">О компании</h1>
     <div class="row">
       <div class="col-md-4">
-        <!--<p class="content__margin">Надежный и проверенный партнер в сфере производства высококачественной трубной продукции для решения целого спектра производственных задач.</p>-->
-        <p class="content__margin">ООО "Спецтруб"</p>
-        <div class="content__wrapper-icon">
-          <div class="content__icon">
-            <i class="material-icons">location_on</i>
-          </div>
-          <div>123022, г. Москва, ул. 2-я Звенигородская, д. 13, стр. 42</div>
-        </div>
-        <div class="content__wrapper-icon">
-          <div class="content__icon">
-            <i class="material-icons">email</i>
-          </div>
-          <a href='mailto:info@spetstrub.ru'>info@spetstrub.ru</a>
-        </div>
-        <div class="content__wrapper-icon">
-          <div class="content__icon">
-            <i class="material-icons">phone_in_talk</i>
-          </div>
-          <div>
-            <a href='tel:+74956447589'>+7(495)644-75-89</a> (многоканальный)
-          </div>
+        <div class="content__img-wrapper">
+          <img src="dist/images/about.png" alt="">
         </div>
       </div>
       <div class="col-md-8">
-        <div class="content-form">
-          <div class="content-form__form-wrapper">
-            <form action="sendmail.php" class="content-form__form" id="sendformcontacts" method="post" enctype="multipart/form-data">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="content-form__form-wrapper-input">
-                    <input class="content-form__form-input" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="content-form__form-wrapper-input">
-                    <input class="content-form__form-input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="content-form__form-wrapper-input">
-                    <input class="content-form__form-input" type="email" autocomplete="off" name="email" placeholder="Ваш email">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="content-form__form-wrapper-input">
-                    <input class="content-form__form-input" type="text" autocomplete="off" name="company" placeholder="Название компании">
-                  </div>
-                </div>
-              </div>
-
-
-
-
-              <div class="content-form__form-wrapper-textarea">
-                <textarea class="content-form__form-textarea" autocomplete="off" name="comment" placeholder="Комментарий"></textarea>
-              </div>
-              <div class="content-form__form-wrapper-file">
-                <input type="file" id="file" autocomplete="off" class="hide-type-file inputfile" data-multiple-caption="{count} files selected" name="attachment">
-                <label class="upload-file" for="file"><span>Прикрепить файл</span></label>
-              </div>
-              <div class="content-form__wrapper-checkbox">
-                <input id="chk" type="checkbox" class="js-policy" checked><label for="chk">Подтверждаю свое согласие на <a href="#">обработку</a> персональных данных</label>
-              </div>
-              <div class="content-form__form-wrapper-submit">
-                <button class="content-form__btn btn btn_sred btn_margin btn_gray" type="submit" name="submit">Отправить</button>
-              </div>
-            </form>
-          </div>
-        </div>
+        <p>ООО "Спецтруб" работает на рынке металлопроката с 2014 года и специализируется на комплектации промышленных предприятий трубами специального и общего назначения всех типоразмеров и марок сталей.</p>
+        <p>В нашем ассортименте присутствуют следующие виды труб:</p>
+        <ul>
+          <li>Трубы котельные, котловые для трубопроводов, для паропроводов;</li>
+          <li>Трубы стальные толстостенные, трубы бесшовные горячедеформированные для нужд машиностроительной отрасли;</li>
+          <li>Трубы тонкостенные, бесшовные холоднодеформированные и многие другие.</li>
+        </ul>
+        <p>За годы успешной работы компания установила тесные деловые отношения с ведущими трубными заводами России. Мы сотрудничаем только с проверенными производителями и гарантируем высокое качество поставляемых труб.</p>
+        <p>Наша задача — предлагать клиентам лучшее обслуживание и поставлять высококачественные трубы точно в срок.</p>
+        <p>ООО "Спецтруб" дорожит репутацией надежного поставщика.</p>
       </div>
     </div>
   </div>
-</section>
-<section>
-  <!-- RD Google Map -->
-  <div class="rd-google-map">
-    <div id="google-map" class="rd-google-map__model"></div>
-    <ul class="rd-google-map__locations">
-      <li data-x="37.55172289999996" data-y="55.76133">
-        <p>ООО «Спецтруб».<br> 123022, г. Москва, ул. 2-я Звенигородская, д. 13, стр. 42<br>
-           Email: <a href='mailto:info@spetstrub.ru'>info@spetstrub.ru</a>
-          <br>
-          Телефон: <a href='tel:+74956447589'>+7(495)644-75-89</a>
-        </p>
-      </li>
-    </ul>
-  </div>
-  <!-- END RD Google Map -->
 </section>
 <footer class="footer">
   <div class="container">
@@ -287,6 +217,13 @@
       <div class="col-md-4">
         <div class="footer__policy">
           <a href="#">Политика обработки персональных данных</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="esdi">
+          <img src="dist/images/mylogo.svg" alt="">
         </div>
       </div>
     </div>

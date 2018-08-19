@@ -1,0 +1,22 @@
+.rd-google-map {
+  color: #333;
+}
+.rd-google-map__model {
+  height: 300px;
+}
+.rd-google-map__model img {
+  max-width: none !important;
+}
+@media (min-width: 480px) {
+  .rd-google-map__model {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .rd-google-map__model {
+    height: 550px;
+  }
+}
+.rd-google-map__locations {
+  display: none;
+}

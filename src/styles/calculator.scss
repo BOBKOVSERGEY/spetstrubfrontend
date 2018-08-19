@@ -1,0 +1,180 @@
+.order h1 {
+  margin-top: 0;
+}
+
+.order .form-zakaz {
+  margin-bottom: 35px;
+}
+
+.order h3 {
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.order .calc-bg {
+  padding: 40px 0px;
+}
+
+.order .calc-bg .calc-left {
+  float: left;
+  width: 47%;
+}
+
+.order .calc-bg .calc-left > div, .order .calc-bg .calc-right > div {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.order .calc-bg .calc-left > div:after, .order .calc-bg .calc-right > div:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.order .calc-bg .calc-right {
+  width: 47%;
+  float: right;
+  margin-left: 6px;
+}
+
+.order .calc-bg .img-cont {
+  background: transparent url('../images/calc-img.jpg') center no-repeat;
+  height: 165px;
+  background-size: contain;
+}
+
+.order .calc-bg .wrap-sel {
+  width: 100%;
+  overflow: hidden;
+  background: #fff url('../images/arrow-down.png') center right 15px no-repeat;
+}
+
+.order .calc-bg .wrap-sel select {
+  padding: 14px 18px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  color: #1e2958;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.order .calc-bg .half {
+  float: left;
+  width: 47%;
+  margin-right: 6%;
+  position: relative;
+}
+
+.order .calc-bg span.measure {
+  position: absolute;
+  display: none;
+  top: 9px;
+  right: 18px;
+  font-size: 15px;
+  color: #FC7032;
+}
+
+.order .calc-bg .half input[type='text']:focus + span.measure {
+
+}
+
+.order .calc-bg .half:last-of-type {
+  margin-right: 0;
+}
+
+.order .calc-bg img {
+  max-width: 100%;
+}
+
+.order .calc-total {
+  transition: .5s all ease;
+  margin: 32px 0;
+}
+
+.order .calc-total .result {
+  font-family: $fontBold;
+  text-transform: uppercase;
+}
+
+.order .calc-total strong {
+  font-size: 20px;
+}
+
+.calculator .error-field, .calc-bg .error-field {
+  background: rgba(249, 113, 64, 0.3) !important;
+  color: white;
+}
+
+.calculator {
+  &__input-wrapper, &__select-wrapper {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  &__input {
+    transition: .3s all ease;
+    height: 41px;
+    display: block;
+    width: 100%;
+    margin: 0;
+    -webkit-appearance: none;
+    font-size: 15px;
+    padding: 5px 18px;
+    color: #777;
+    background: #fff;
+    border: 0;
+    border-radius: 0;
+    &[disabled] {
+      cursor: not-allowed;
+      opacity: .7;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.55);
+    }
+  }
+  &__select-wrapper {
+    &:after {
+      font-family: FontAwesome;
+      color: #333;
+      transition: .3s all ease;
+      content: "\f107";
+      font-size: 20px;
+      position: absolute;
+      right: 15px;
+      top: 6px;
+      z-index: 1;
+      text-align: center;
+      pointer-events: none;
+      box-sizing: border-box;
+    }
+  }
+  &__select {
+    transition: .3s all ease;
+    height: 41px;
+    display: block;
+    width: 100%;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 15px;
+    padding: 5px 18px;
+    color: #777;
+    background: #fff;
+    border: 0;
+    border-radius: 0;
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__btn {
+    margin-top: 30px;
+  }
+}

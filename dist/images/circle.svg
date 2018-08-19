@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="180px"
+	 height="180px" viewBox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
+<g id="back">
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M33.314,71.221c13.045-12.204,25.529-24.99,38.003-37.772"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M30.134,84.402c18.277-17.961,36.448-36.029,54.508-54.208"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M70.379,54.157c8.148-7.921,16.122-16.018,24.095-24.115"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M30.407,93.853c8.024-7.958,16.061-15.902,24.11-23.834"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M85.955,49.26c5.681-5.733,11.382-11.446,17.105-17.137"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M31.71,103.556c6.099-6.156,12.251-12.26,18.495-18.269"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M95.834,50.07c5.059-5.045,10.111-10.097,15.157-15.156"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M34.473,111.819c5.33-5.384,10.636-10.792,15.908-16.231"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M103.985,51.93c4.603-4.6,9.201-9.204,13.795-13.812"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M37.893,118.01c4.652-4.743,9.305-9.483,13.971-14.212"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M116.672,59.265c4.36-4.422,8.718-8.847,13.078-13.269"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M46.32,129.385c4.282-4.403,8.595-8.777,12.974-13.084"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M110.979,54.55c4.441-4.407,8.883-8.813,13.324-13.22"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M41.673,123.479c4.549-4.519,9.157-8.979,13.854-13.344"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M121.513,64.413c4.412-4.411,8.822-8.824,13.23-13.24"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M51.166,134.425c4.401-4.477,8.829-8.929,13.315-13.322"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M125.5,70.102c4.395-4.425,8.788-8.85,13.184-13.273"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M56.969,138.461c4.36-4.354,8.749-8.679,13.185-12.954"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M128.042,77.601c4.893-4.924,9.783-9.85,14.675-14.774"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M62.59,143.283c4.882-4.923,9.75-9.86,14.601-14.813"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M130.052,85.468c5.141-5.213,10.276-10.432,15.414-15.648"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M70.211,145.428c4.916-5.047,9.871-10.057,14.956-14.934"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M129.425,96.292c6.208-6.227,12.407-12.462,18.604-18.699"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M77.994,148.167c5.88-6.034,11.729-12.099,17.622-18.12"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M123.184,112.575c8.674-8.405,17.265-16.894,25.807-25.432"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M86.606,149.695c8.364-8.69,16.644-17.464,25.221-25.947"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M95.96,149.727c17.651-17.903,35.348-35.761,53.091-53.572"/>
+	<path fill="none" stroke="#FC7032" stroke-miterlimit="10" d="M108.909,146.798c12.298-12.483,24.655-24.908,37.043-37.301"/>
+</g>
+<g id="tavr">
+	<circle fill="none" stroke="#363636" stroke-width="3" stroke-miterlimit="10" cx="90" cy="90" r="59.5"/>
+	<circle fill="none" stroke="#363636" stroke-width="3" stroke-miterlimit="10" cx="90" cy="90" r="40.5"/>
+	<g>
+		<g>
+			<line fill="none" stroke="#363636" stroke-miterlimit="10" x1="30" y1="30" x2="43.502" y2="43.502"/>
+			<g>
+				<polygon points="40.049,43.977 42.847,42.847 43.977,40.049 46.668,46.668 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<polyline fill="none" stroke="#363636" stroke-miterlimit="10" points="162,150.5 150,150.5 136.745,137.245 			"/>
+			<g>
+				<polygon points="133,133.5 140.433,136.62 137.024,137.524 136.121,140.932 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#363636" stroke-miterlimit="10" x1="49.938" y1="50.042" x2="50.999" y2="51.102"/>
+			
+				<line fill="none" stroke="#363636" stroke-miterlimit="10" stroke-dasharray="2.9505,1.967" x1="52.391" y1="52.491" x2="128.243" y2="128.245"/>
+			<line fill="none" stroke="#363636" stroke-miterlimit="10" x1="128.938" y1="128.94" x2="130" y2="130"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#363636" stroke-miterlimit="10" x1="107.993" y1="72.118" x2="114.583" y2="65.527"/>
+			<g>
+				<polygon points="115.058,68.98 113.928,66.182 111.13,65.052 117.75,62.361 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<polyline fill="none" stroke="#363636" stroke-miterlimit="10" points="162.427,30 150.581,30.029 137.326,43.284 			"/>
+			<g>
+				<polygon points="133.581,47.029 136.701,39.596 137.605,43.004 141.013,43.908 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#363636" stroke-miterlimit="10" x1="118.7" y1="61.425" x2="119.76" y2="60.364"/>
+			
+				<line fill="none" stroke="#363636" stroke-miterlimit="10" stroke-dasharray="2.8235,1.8823" x1="121.09" y1="59.032" x2="130.402" y2="49.71"/>
+			<line fill="none" stroke="#363636" stroke-miterlimit="10" x1="131.067" y1="49.044" x2="132.127" y2="47.983"/>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 166.667 34.333)" font-family="'Tahoma'" font-size="18">s</text>
+	<text transform="matrix(1 0 0 1 164.75 156.5)" font-family="'Tahoma'" font-size="18">D</text>
+</g>
+</svg>

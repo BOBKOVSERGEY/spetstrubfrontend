@@ -57,10 +57,39 @@
 
 }
 
+.esdi {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  &:hover &__logo img {
+      transform: rotate(360deg) scale(2);
+  }
+  &__logo {
+    max-width: 30px;
+    margin-right: 10px;
+    & img {
+      position: relative;
+      transition: .5s all ease;
+    }
+  }
+  &__text {
+    & a {
+      font-family: $fontLight;
+      font-size: 15px;
+      color: #575756;
+    }
+  }
+}
+
 @media only screen and (max-width : 992px) {
   .footer {
     &__phone {
       text-align: left;
     }
+  }
+}
+@media only screen and (max-width : 768px) {
+  .esdi {
+    justify-content: center;
   }
 }

@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>СпецТруб</title>
+  <title>Каталог</title>
   <link rel="stylesheet" href="dist/css/main.css">
   <link href="dist/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
 </head>
@@ -45,7 +45,7 @@
           </div>
         </div>
         <ul class="rd-navbar-nav">
-          <li class="active">
+          <li>
             <a href="/">Главная</a>
           </li>
           <li>
@@ -59,7 +59,7 @@
               </li>
             </ul>-->
           </li>
-          <li>
+          <li class="active">
             <a href="catalog.html">Каталог</a>
             <!--<ul class="rd-navbar-megamenu">
               <li>
@@ -166,81 +166,12 @@
     </nav>
   </div>
 </header>
-<section class="slider">
-  <div class="camera_container">
-    <div id="camera" class="camera_wrap">
-      <div data-src="dist/images/bg-slider-two.jpg">
-        <div class="camera_caption fadeIn">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 col-md-offset-8 bg-secondary skew-right">
-                <div class="bg-secondary__caption">
-                  <h2>Трубы
-                    специального
-                    назначения</h2>
-                  <div class="bg-secondary__description">
-                    <p>Высококачественные стальные трубы от производителя</p>
-                  </div>
-                  <div class="bg-secondary__wrapper-btn">
-                    <a class="btn btn_big btn_orange" href='#' data-toggle="modal" data-target="#myModal">Онлайн заказ</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-src="dist/images/bg-slider-four.jpg">
-        <div class="camera_caption fadeIn">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 col-md-offset-8 bg-secondary skew-right">
-                <div class="bg-secondary__caption">
-                  <h2>Трубы
-                    специального
-                    назначения</h2>
-                  <div class="bg-secondary__description">
-                    <p>Высококачественные стальные трубы от производителя</p>
-                  </div>
-                  <div class="bg-secondary__wrapper-btn">
-                    <a class="btn btn_big btn_orange" href='#' data-toggle="modal" data-target="#myModal">Онлайн заказ</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-src="dist/images/bg-slider-one.jpg">
-        <div class="camera_caption fadeIn">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 col-md-offset-8 bg-secondary skew-right">
-                <div class="bg-secondary__caption">
-                  <h2>Трубы
-                    специального
-                    назначения</h2>
-                  <div class="bg-secondary__description">
-                    <p>Высококачественные стальные трубы от производителя</p>
-                  </div>
-                  <div class="bg-secondary__wrapper-btn">
-                    <a class="btn btn_big btn_orange" data-toggle="modal" data-target="#myModal" href='#'>Онлайн заказ</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="catalog">
+<section class="content catalog">
   <div class="container">
-    <h2 class="catalog__heading">Каталог</h2>
+    <h1 class="content__heading">Каталог</h1>
     <div class="row">
       <div class="col-md-4 col-sm-6">
-        <a href="#" class="catalog__item wow fadeInUp">
+        <a href="product.html" class="catalog__item wow fadeInUp">
           <img src="dist/images/product-tolstosten-2.jpg" alt="">
           <div class="catalog__item-body">
             <h5 class="catalog__item-heading">Трубы толстостенные</h5>
@@ -277,9 +208,9 @@
       </div>
       <div class="col-md-4 col-sm-6">
         <a href="#" class="catalog__item wow fadeInUp" data-wow-delay=".6s">
-          <img src="dist/images/product-30gsa.jpg" alt="">
+          <img src="dist/images/product-gost-75.jpg" alt="">
           <div class="catalog__item-body">
-            <h5 class="catalog__item-heading">Трубы 30ХГСА</h5>
+            <h5 class="catalog__item-heading">Трубы ГОСТ 8734-75</h5>
             <span class="catalog__item-body-angle">
               <span class="catalog__item-body-angle_top"></span>
               <span class="catalog__item-body-angle_bottom"></span>
@@ -311,65 +242,77 @@
           </div>
         </a>
       </div>
-    </div>
-    <div class="catalog__btn">
-      <a class="btn btn_big btn_orange wow fadeInLeft" data-wow-delay=".2s" href='catalog.html'>Еще</a>
-    </div>
-  </div>
-</section>
-<section class="suppliers">
-  <div class="container">
-    <h2 class="suppliers__heading">Поставщики</h2>
-    <div class="owl-carousel js-photo-gallery">
-      <div class="owl-item">
-        <div class="suppliers__item-img">
-          <img src="dist/images/suppliers-1.png" alt="">
-        </div>
+      <div class="col-md-4 col-sm-6">
+        <a href="#" class="catalog__item">
+          <img src="dist/images/product-obsadnye.jpg" alt="">
+          <div class="catalog__item-body">
+            <h5 class="catalog__item-heading">Трубы обсадные</h5>
+            <span class="catalog__item-body-angle">
+              <span class="catalog__item-body-angle_top"></span>
+              <span class="catalog__item-body-angle_bottom"></span>
+            </span>
+          </div>
+        </a>
       </div>
-      <div class="owl-item">
-        <div class="suppliers__item-img">
-          <img src="dist/images/suppliers-7.png" alt="">
-        </div>
+      <div class="col-md-4 col-sm-6">
+        <a href="#" class="catalog__item">
+          <img src="dist/images/product-antikor.jpg" alt="">
+          <div class="catalog__item-body">
+            <h5 class="catalog__item-heading">Трубы с покрытием</h5>
+            <span class="catalog__item-body-angle">
+              <span class="catalog__item-body-angle_top"></span>
+              <span class="catalog__item-body-angle_bottom"></span>
+            </span>
+          </div>
+        </a>
       </div>
-      <div class="owl-item">
-        <div class="suppliers__item-img">
-          <img src="dist/images/suppliers-3.png" alt="">
-        </div>
+      <div class="col-md-4 col-sm-6">
+        <a href="#" class="catalog__item">
+          <img src="dist/images/product-ti.jpg" alt="">
+          <div class="catalog__item-body">
+            <h5 class="catalog__item-heading">Трубы в изоляции</h5>
+            <span class="catalog__item-body-angle">
+              <span class="catalog__item-body-angle_top"></span>
+              <span class="catalog__item-body-angle_bottom"></span>
+            </span>
+          </div>
+        </a>
       </div>
-      <div class="owl-item">
-        <div class="suppliers__item-img">
-          <img src="dist/images/suppliers-6.png" alt="">
-        </div>
+      <div class="col-md-4 col-sm-6">
+        <a href="#" class="catalog__item">
+          <img src="dist/images/product-nerz-2.jpg" alt="">
+          <div class="catalog__item-body">
+            <h5 class="catalog__item-heading">Трубы нержавеющие</h5>
+            <span class="catalog__item-body-angle">
+              <span class="catalog__item-body-angle_top"></span>
+              <span class="catalog__item-body-angle_bottom"></span>
+            </span>
+          </div>
+        </a>
       </div>
-      <div class="owl-item">
-        <div class="suppliers__item-img">
-          <img src="dist/images/suppliers-4.png" alt="">
-        </div>
+      <div class="col-md-4 col-sm-6">
+        <a href="#" class="catalog__item">
+          <img src="dist/images/product-tbd.jpg" alt="">
+          <div class="catalog__item-body">
+            <h5 class="catalog__item-heading">ТБД</h5>
+            <span class="catalog__item-body-angle">
+              <span class="catalog__item-body-angle_top"></span>
+              <span class="catalog__item-body-angle_bottom"></span>
+            </span>
+          </div>
+        </a>
       </div>
-      <div class="owl-item">
-        <div class="suppliers__item-img">
-          <img src="dist/images/suppliers-2.png" alt="">
-        </div>
-      </div>
-      <div class="owl-item">
-        <div class="suppliers__item-img">
-          <img src="dist/images/suppliers-8.png" alt="">
-        </div>
-      </div>
-      <div class="owl-item">
-        <div class="suppliers__item-img">
-          <img src="dist/images/suppliers-9.png" alt="">
-        </div>
-      </div>
-      <div class="owl-item">
-        <div class="suppliers__item-img">
-          <img src="dist/images/suppliers-5.png" alt="">
-        </div>
-      </div>
-      <div class="owl-item">
-        <div class="suppliers__item-img">
-          <img src="dist/images/suppliers-10.png" alt="">
-        </div>
+      <div class="col-md-4 col-sm-6">
+        <a href="#" class="catalog__item">
+          <img src="dist/images/product-fasonka.jpg" alt="">
+          <div class="catalog__item-body">
+            <h5 class="catalog__item-heading">Фасонные изделия</h5>
+            <span class="catalog__item-body-angle">
+              <span class="catalog__item-body-angle_top"></span>
+              <span class="catalog__item-body-angle_bottom"></span>
+            </span>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -404,62 +347,10 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="esdi">
-          <div class="esdi__logo">
-            <img src="dist/images/mylogo.svg" alt="">
-          </div>
-          <div class="esdi__text">
-            <a href="#">Разработка ЭСДИ</a>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </footer>
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-content__btn-close">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      </div>
-      <h2 class="modal-content__heading">Онлайн заказ</h2>
-      <div class="modal-content__form-wrapper">
-        <form action="sendmail.php" class="modal-content__form" id="sendformpopup" method="post" enctype="multipart/form-data">
-          <div class="modal-content__form-wrapper-input">
-            <input class="modal-content__form-input" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
-          </div>
-          <div class="modal-content__form-wrapper-input">
-            <input class="modal-content__form-input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
-          </div>
-          <div class="modal-content__form-wrapper-input">
-            <input class="modal-content__form-input" type="email" autocomplete="off" name="email" placeholder="Ваш email">
-          </div>
-          <div class="modal-content__form-wrapper-input">
-            <input class="modal-content__form-input" type="text" autocomplete="off" name="company" placeholder="Название компании">
-          </div>
-          <div class="modal-content__form-wrapper-textarea">
-            <textarea class="modal-content__form-textarea" autocomplete="off" name="comment" placeholder="Комментарий"></textarea>
-          </div>
-          <div class="modal-content__form-wrapper-file">
-            <input type="file" id="file" autocomplete="off" class="hide-type-file inputfile" data-multiple-caption="{count} files selected" name="attachment">
-            <label class="upload-file" for="file"><span>Прикрепить файл</span></label>
-          </div>
-          <div class="modal-content__wrapper-checkbox">
-            <input id="chk" type="checkbox" class="js-policy" checked><label for="chk">Подтверждаю свое согласие на <a href="#">обработку</a> персональных данных</label>
-          </div>
-          <div class="modal-content__form-wrapper-submit">
-            <button class="modal-content__btn btn btn_sred btn_gray" type="submit" name="submit">Отправить</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
 <script src="dist/js/lib.js"></script>
-
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyAbF547wmpRHA68yKJP62H7yha2Nzsilm8&language=ru"></script>
 <script src="dist/js/main.js"></script>
 </body>
 </html>

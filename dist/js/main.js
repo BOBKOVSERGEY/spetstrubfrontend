@@ -264,6 +264,85 @@ $(function () {
 
   /*******end inputfile******/
 
+  /**
+   * owl - js-photo-gallery
+   */
+  $('.js-photo-gallery').owlCarousel({
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    items:4,
+    margin:50,
+    stagePadding:40,
+    smartSpeed:450,
+    //nav:true,
+    //dots:false,
+    loop:true,
+    navElement: 'div class="owl-slider-arrow-photo-gallery"',
+    navText:[],
+    autoplay:false,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    responsive:{
+      0:{
+        items:1,
+        nav:false,
+        dots:true,
+        //margin:30,
+        //stagePadding:5,
+      },
+      480:{
+        items:2,
+        nav:false,
+        dots:true,
+      },
+      992:{
+        items:4,
+        nav:true,
+        dots:false,
+      }
+    }
+  });
 
 });
+
+(function ($) {
+  var o = document.getElementById("calculator");
+  if (o) {
+    include('dist/js/calculator.js');
+  }
+})
+(jQuery);
+
+(function ($) {
+  var o = document.getElementById("feedback");
+  if (o) {
+    if (window.location.pathname=='/') {
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 600) {
+          $('.feedback').addClass('feedback_scroll');
+        } else {
+          $('.feedback').removeClass('feedback_scroll');
+        }
+        if (scroll == $(document).height() - $(window).height()) {
+          $('.feedback').removeClass('feedback_scroll')
+        }
+      });
+    } else {
+      $('.feedback').addClass('feedback_scroll');
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll == $(document).height() - $(window).height()) {
+          $('.feedback').removeClass('feedback_scroll')
+        } else {
+          $('.feedback').addClass('feedback_scroll');
+        }
+      });
+    }
+  }
+
+
+})
+(jQuery);
+
 

@@ -4,6 +4,7 @@
 @import "fontAweasome";
 @import "fonts";
 @import "animate";
+@import "owl";
 
 
 body {
@@ -13,28 +14,6 @@ body {
 }
 p {
   margin: 0 0 10px 0;
-}
-.rd-google-map {
-  color: #333;
-}
-.rd-google-map__model {
-  height: 300px;
-}
-.rd-google-map__model img {
-  max-width: none !important;
-}
-@media (min-width: 480px) {
-  .rd-google-map__model {
-    height: 300px;
-  }
-}
-@media (min-width: 768px) {
-  .rd-google-map__model {
-    height: 550px;
-  }
-}
-.rd-google-map__locations {
-  display: none;
 }
 
 
@@ -48,12 +27,69 @@ p {
 @import "popup-form";
 @import "content";
 @import "content-form";
+@import "suppliers";
+@import "calculator";
+@import "google-map";
 
 @import "footer";
 
 
-
-
+.feedback {
+  //width: 70px;
+  //height: 70px;
+  background: $colorOrange;
+  position: fixed;
+  bottom: 40px;
+  left: 30px;
+  border-radius: 0 3px 3px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  color: #fff;
+  font-size: 17px;
+  padding: 10px 20px;
+  transform: translateX(-212px);
+  transition: .7s all ease;
+  //box-shadow: 3px 1px 14px rgba($colorGray,.5);
+  &_scroll {
+    transform: translateX(0px);
+    transition: .7s all ease;
+  }
+  &:hover {
+    background: #363636;
+    color: #fff;
+    &:after {
+      content: '';
+      border-left-color: #363636;
+    }
+  }
+  &:focus {
+    color: #fff;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    border: 20px solid transparent;
+    border-left: 20px solid $colorOrange;
+    transition: .7s all ease;
+    top: 0;
+    right: -39px;
+    z-index: -1;
+  }
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+  & i {
+    font-size: 26px;
+    color: #333;
+  }
+}
+@media only screen and (max-width : 480px) {
+  .feedback {
+    display: none;
+  }
+}
 .fontLight {
   font-family: $fontLight;
 }
